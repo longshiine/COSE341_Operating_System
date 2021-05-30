@@ -1,0 +1,38 @@
+<call_my_queue.c>
+Enqueue : 1
+Enqueue : 2
+Enqueue : 3
+Enqueue : 3
+Dequeue : 1
+Dequeue : 2
+Dequeue : 3
+
+<dmesg>
+[  114.862196] [System call] oslab_enqueue(); -----
+[  114.862198] Queue Front------------------------
+[  114.862199] 1
+[  114.862199] Queue Rear---------------------
+[  114.862339] [System call] oslab_enqueue(); -----
+[  114.862340] Queue Front------------------------
+[  114.862341] 1
+[  114.862342] 2
+[  114.862342] Queue Rear---------------------
+[  114.862347] [System call] oslab_enqueue(); -----
+[  114.862348] Queue Front------------------------
+[  114.862349] 1
+[  114.862349] 2
+[  114.862350] 3
+[  114.862350] Queue Rear---------------------
+[  114.862354] [Error] - Already existing value 
+[  114.862356] [System call] oslab_dequeue(); ------
+[  114.862357] Queue Front------------------------
+[  114.862358] 2
+[  114.862358] 3
+[  114.862359] Queue Rear---------------------
+[  114.862362] [System call] oslab_dequeue(); ------
+[  114.862363] Queue Front------------------------
+[  114.862363] 3
+[  114.862364] Queue Rear---------------------
+[  114.862372] [System call] oslab_dequeue(); ------
+[  114.862373] Queue Front------------------------
+[  114.862373] Queue Rear---------------------
