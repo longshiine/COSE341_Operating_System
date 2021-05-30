@@ -23,6 +23,7 @@ COSE341: Operating System Course that learns process management, virtual memory,
   - 새로 컴파일하는 Kernel Version은 4.20.11 로 한다.
   - 커널 상에 Queue를 구현한다.
   - System Call시 전달받은 정수형 인자를 printk로 출력하도록 한다.
+
 **B. User Process**  
   - syscall를 이용해서 새로 작성한 System Call을 호출하도록 한다.
   - Enqueue와 Dequeue가 제대로 동작하는지 확인한다.
